@@ -43,7 +43,6 @@ jobs:
         env:
           BLOCKLIST_URLS: ${{ vars.BLOCKLIST_URLS }}
 
-      - name: Create or update rules and lists
         run: npm run cloudflare-create
         env:
           BLOCK_PAGE_ENABLED: ${{ vars.BLOCK_PAGE_ENABLED }}
